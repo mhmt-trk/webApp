@@ -63,6 +63,13 @@ nav {
     transition: 0.5s;
 }
 
+nav .side {
+    display: none;
+}
+
+
+
+
 .text-box {
     width: 90%;
     position: absolute;
@@ -102,6 +109,43 @@ nav {
 
 }
 
+@media (max-width: 768px) {
+    .text-box h1{
+        font-size: 30px;
+    }
+    #logo{
+        font-size: 28px;
+        margin: 16px;
+    }
+    nav .side {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    .nav-link ul li {
+        display: block;
+    }
+    .nav-link ul{
+        padding: 30px;
+    }
+}
+
+
 .products {
     width: 80%;
     margin: auto;
@@ -136,6 +180,7 @@ p {
     padding: 20px 12px;
     margin: 2px;
     box-sizing: border-box;
+    transition: 0.8s;
 }
 
 .products-col:hover {
@@ -143,17 +188,19 @@ p {
 
 }
 
-@media (max-width:800px) {
-    .row{
-        flex-direction: column;
-    }
-}
-
 h3 {
     font-weight: 700;
     text-align: center;
     margin: 10px 0;
 }
+
+@media (max-width:750px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
 
 .campus {
     margin: auto;
@@ -205,8 +252,9 @@ h3 {
 }
 
 .layer:hover h3 {
-    opacity: 1;
-    bottom: 50%;
+    /* opacity: 1;
+    bottom: 50%; */
+    top: 50%;
 
 }
 
@@ -220,7 +268,7 @@ h3 {
 .services-col {
     flex-basis: 32%;
     border-radius: 10px;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
 .services-col img {
@@ -287,6 +335,7 @@ h3 {
 }
 
 @media (max-width:700px) {
+
     /* font küçülsün */
     .abone h2 {
         font-size: 25px;
@@ -295,8 +344,14 @@ h3 {
 }
 
 footer {
-    padding: 30px;
+    padding: 0 30px;
     text-align: center;
+}
+
+.icon{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 footer span {

@@ -21,6 +21,9 @@
         <nav>
             <a href="index.html" id="logo">BolKitapçı</a>
             <div class="nav-link" id="navLink">
+                <span class="material-symbols-outlined side">
+                    close
+                </span>
                 <ul>
                     <li><a href="#">ANA SAYFA</a></li>
                     <li><a href="#">HAKKIMIZDA</a></li>
@@ -29,6 +32,9 @@
                     <li><a href="#">İLETİŞİM</a></li>
                 </ul>
             </div>
+            <span class="material-symbols-outlined side">
+                menu
+            </span>
         </nav>
 
         <div class="text-box">
@@ -191,6 +197,18 @@
                 </a> </p>
         </div>
     </footer>
+    <script>
+        function hideMenu(){
+            document.getElementById('navLink').style.right = '-200px';
+        }
+
+        function showMenu(){
+            document.getElementById('navLink').style.right = '0';
+        }
+
+    </script>
+
+  
 </body>
 
 </html>
